@@ -10,9 +10,9 @@
 <body class="bg-gray-50 text-gray-800 font-sans">
   <div class="max-w-3xl mx-auto p-8">
     <header class="flex flex-col items-center text-center">
-      <img src="assets/profile.jpg" alt="Aymen Sadraoui" class="w-32 h-32 rounded-full shadow mb-4">
+      <img src="figures/profile.jpg" alt="Aymen Sadraoui" class="w-32 h-32 rounded-full shadow mb-4">
       <h1 class="text-3xl font-bold mb-2">Aymen Sadraoui</h1>
-      <p class="text-lg text-gray-600">PhD in AI & Computational Pathology | CentraleSupélec, Université Paris-Saclay</p>
+      <p class="text-lg text-gray-600">PhD in AI & Computational Pathology | Centre de vision numérique (CVN)  CentraleSupélec, Université Paris-Saclay, France</p>
       <div class="mt-4 space-x-4">
         <a href="https://scholar.google.com/citations?user=OHURXa0AAAAJ&hl=en" target="_blank" class="text-blue-600 hover:underline">Google Scholar</a>
         <a href="https://www.linkedin.com/in/aymen-sadraoui-abb571288/" target="_blank" class="text-blue-600 hover:underline">LinkedIn</a>
@@ -24,18 +24,38 @@
       <section id="about">
         <h2 class="text-2xl font-semibold mb-2">About Me</h2>
         <p class="leading-relaxed">
-          I am a PhD researcher at CentraleSupélec, Université Paris-Saclay, working on AI-based diagnostic
-          and prognostic modeling for hepatocellular carcinoma from histopathological whole slide images.
-          My work combines optimization, deep learning, and computational pathology.
-        </p>
+<p class="leading-relaxed">
+  I am a PhD student at <b>CentraleSupélec, Université Paris-Saclay</b>, conducting my research between the 
+  <b>CVN laboratory</b> and the <b>Kremlin-Bicêtre Hospital</b>. My work focuses on developing 
+  <b>AI-based diagnostic and prognostic models</b> for <b>Hepatocellular Carcinoma (HCC)</b> from 
+  histopathological whole slide images (WSIs).  
+  <br><br>
+  On the <b>diagnostic</b> side, I designed deep learning frameworks for the automated detection 
+  and classification of tumor architectures, leveraging fully-supervised model at different scales, few-shot models and transductive learning to 
+  handle limited labeled data and improve spatial coherence across WSIs.  
+  <br><br>
+  For the <b>prognostic</b> aspect, my work aims to predict <b>recurrence risk</b> by integrating 
+  various AI-based features extracted from WSIs with clinical and macroscopic data. This involves 
+  building interpretable models that link visual phenotypes to patient outcomes.  
+  <br><br>
+  In parallel, I explore <b>convex optimization and algorithm unrolling</b> techniques for 
+  <b>stain separation and stain normalization</b> in histopathology. By unrolling proximal 
+  algorithms into neural networks, my models achieve more robust color deconvolution and improved stain appearence across histopathological images.
+</p>
+
       </section>
 
       <section id="publications">
-        <h2 class="text-2xl font-semibold mb-2">Selected Publications</h2>
+        <h2 class="text-2xl font-semibold mb-2">Publications</h2>
         <ul class="list-disc pl-6 space-y-2">
+            <li>
+            Zhou, L., Sadraoui, A., <i>et al.</i> (2025). 
+            <b>UNEM: UNrolled Generalized EM for Transductive Few-Shot Learning</b>. 
+            <i>Computer Vision and Pattern Recognition Conference (CVPR 2025)</i>.
+          </li>
           <li>
             Laurent-Bellue, A., Sadraoui, A., <i>et al.</i> (2024). 
-            <b>Deep learning classification and quantification of pejorative and nonpejorative architectures in HCC</b>. 
+            <b>Deep Learning Classification and Quantification of Pejorative and Nonpejorative Architectures in Resected Hepatocellular Carcinoma from Digital Histopathologic Images</b>. 
             <i>The American Journal of Pathology</i>.
           </li>
           <li>
@@ -54,22 +74,27 @@
       <section id="awards">
         <h2 class="text-2xl font-semibold mb-2">Achievements</h2>
         <p>
-          🏆 1st Place — <b>Dataliut Lung Transplant Rejection Challenge</b> organized by Hôpital Foch and Bpifrance.  
+          🏆 1st Place (out of 256 team)— <b>DigiLut Data Challenge for Lung Transplant Rejection</b> organized by Hôpital Foch and Bpifrance.  
           Represented CVN, CentraleSupélec, Université Paris-Saclay, Inria, and OPIS.
+          <a href="https://www.linkedin.com/feed/update/urn:li:activity:7241338279902560256/" target="_blank" class="text-blue-600 hover:underline">DigiLut Data Challenge</a>
         </p>
       </section>
-
       <section id="contact">
-        <h2 class="text-2xl font-semibold mb-2">Contact</h2>
-        <p>
-          📧 <a href="mailto:aymen.sadraoui@centralesupelec.fr" class="text-blue-600 hover:underline">
-          aymen.sadraoui@centralesupelec.fr</a>
-        </p>
-      </section>
+  <h2 class="text-2xl font-semibold mb-2">Contact</h2>
+  <p>
+    📧 <a href="mailto:aymen.sadraoui@centralesupelec.fr" class="text-blue-600 hover:underline">aymen.sadraoui@centralesupelec.fr</a>
+  <p>
+    📧 <a href="mailto:aymensadraoui1919@gmail.com" class="text-blue-600 hover:underline"> aymensadraoui1919@gmail.com</a>  
+  </p>
+        <br>
+    📞 +33 (0)7 65 68 52 67<br>
+    📍 Centre de Vision Numérique, CentraleSupélec, Gif-sur-Yvette, 91190, France
+  </p>
+</section>
     </main>
 
     <footer class="mt-10 text-center text-gray-500 text-sm">
-      © 2025 Aymen Sadraoui. Built with ❤️ using TailwindCSS.
+      © 2025 Aymen Sadraoui.
     </footer>
   </div>
 </body>
