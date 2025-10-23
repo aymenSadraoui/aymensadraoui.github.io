@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://aymensadraoui.github.io/sitemap.xml
