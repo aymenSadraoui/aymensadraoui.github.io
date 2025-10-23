@@ -6,13 +6,42 @@
   <title>Aymen Sadraoui | AI & Computational Pathology</title>
   <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
   <link rel="stylesheet" href="style.css" />
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+    nav a:hover {
+      color: #2563eb; /* Tailwind blue-600 */
+    }
+    nav a.active {
+      font-weight: bold;
+      text-decoration: underline;
+    }
+  </style>
 </head>
 <body class="bg-gray-50 text-gray-800 font-sans">
+
+  <!-- Sticky Navigation -->
+  <nav class="bg-white shadow sticky top-0 z-50">
+    <div class="max-w-5xl mx-auto px-6 py-3 flex justify-between items-center">
+      <div class="text-xl font-bold text-gray-800">Aymen Sadraoui</div>
+      <div class="space-x-6">
+        <a href="#about" class="text-gray-600 hover:text-blue-600">About</a>
+        <a href="#publications" class="text-gray-600 hover:text-blue-600">Publications</a>
+        <a href="#awards" class="text-gray-600 hover:text-blue-600">Achievements</a>
+        <a href="#contact" class="text-gray-600 hover:text-blue-600">Contact</a>
+        <a href="cv.html" class="text-gray-600 hover:text-blue-600">CV</a>
+      </div>
+    </div>
+  </nav>
+
   <div class="max-w-3xl mx-auto p-8">
-    <header class="flex flex-col items-center text-center">
+
+    <!-- Header -->
+    <header class="flex flex-col items-center text-center mt-6">
       <img src="figures/profile.jpg" alt="Aymen Sadraoui" class="w-32 h-32 rounded-full shadow mb-4">
       <h1 class="text-3xl font-bold mb-2">Aymen Sadraoui</h1>
-      <p class="text-lg text-gray-600">PhD in AI & Computational Pathology | Centre de vision numérique (CVN)  CentraleSupélec, Université Paris-Saclay, France</p>
+      <p class="text-lg text-gray-600">PhD in AI & Computational Pathology | Centre de Vision Numérique, CentraleSupélec, Université Paris-Saclay, France</p>
       <div class="mt-4 space-x-4">
         <a href="https://scholar.google.com/citations?user=OHURXa0AAAAJ&hl=en" target="_blank" class="text-blue-600 hover:underline">Google Scholar</a>
         <a href="https://www.linkedin.com/in/aymen-sadraoui-abb571288/" target="_blank" class="text-blue-600 hover:underline">LinkedIn</a>
@@ -20,82 +49,112 @@
       </div>
     </header>
 
-    <main class="mt-10 space-y-8">
-      <section id="about">
-        <h2 class="text-2xl font-semibold mb-2">About Me</h2>
-        <p class="leading-relaxed">
-<p class="leading-relaxed">
-  I am a PhD student at <b>CentraleSupélec, Université Paris-Saclay</b>, conducting my research between the 
-  <b>CVN laboratory</b> and the <b>Kremlin-Bicêtre Hospital</b>. My work focuses on developing 
-  <b>AI-based diagnostic and prognostic models</b> for <b>Hepatocellular Carcinoma (HCC)</b> from 
-  histopathological whole slide images (WSIs).  
-  <br><br>
-  On the <b>diagnostic</b> side, I designed deep learning frameworks for the automated detection 
-  and classification of tumor architectures, leveraging fully-supervised model at different scales, few-shot models and transductive learning to 
-  handle limited labeled data and improve spatial coherence across WSIs.  
-  <br><br>
-  For the <b>prognostic</b> aspect, my work aims to predict <b>recurrence risk</b> by integrating 
-  various AI-based features extracted from WSIs with clinical and macroscopic data. This involves 
-  building interpretable models that link visual phenotypes to patient outcomes.  
-  <br><br>
-  In parallel, I explore <b>convex optimization and algorithm unrolling</b> techniques for 
-  <b>stain separation and stain normalization</b> in histopathology. By unrolling proximal 
-  algorithms into neural networks, my models achieve more robust color deconvolution and improved stain appearence across histopathological images.
-</p>
+    <!-- Main content -->
+    <main class="mt-10 space-y-12">
 
+      <!-- About Me -->
+      <section id="about">
+        <h2 class="text-2xl font-semibold mb-2">👨‍🔬 About Me</h2>
+        <p class="leading-relaxed">
+          I am a PhD student at <b>CentraleSupélec, Université Paris-Saclay</b>, conducting my research between the 
+          <b>CVN laboratory</b> and the <b>Kremlin-Bicêtre Hospital</b>. My work focuses on developing 
+          <b>AI-based diagnostic and prognostic models</b> for <b>Hepatocellular Carcinoma (HCC)</b> from 
+          histopathological whole slide images (WSIs).  
+          <br>
+          On the <b>diagnostic</b> side, I designed deep learning frameworks for the automated detection 
+          and classification of tumor architectures, leveraging fully-supervised models at different scales, 
+          few-shot models, and transductive learning to handle limited labeled data and improve spatial coherence.
+          <br>
+          For the <b>prognostic</b> aspect, my work aims to predict <b>recurrence risk</b> by integrating 
+          various AI-based features extracted from WSIs with clinical and macroscopic data. This involves 
+          building interpretable models linking visual phenotypes to patient outcomes.
+          <br>
+          In parallel, I explore <b>convex optimization and algorithm unrolling</b> techniques for 
+          <b>stain separation and normalization</b> in histopathology. By unrolling proximal 
+          algorithms into neural networks, my models achieve more robust color decomposition and improved stain appearance across images.
+        </p>
       </section>
 
+    <!-- research -->
+<section id="research-interests" class="mt-8">
+  <h2 class="text-2xl font-semibold mb-2">🛠️ Research interests</h2>
+  <ul class="list-disc pl-6 space-y-2 leading-relaxed">
+    <li>
+      <b>Medical Image Analysis</b> <br> 
+      Deep neural networks, foundation models, image processing
+    </li>
+    <li>
+      <b>Large-scale Optimization</b> <br> 
+      Image reconstruction, convex optimization, proximal algorithms, unrolled networks
+    </li>
+    <li>
+      <b>Image Classification</b> <br>  
+      Few-shot learning, weakly supervised learning, transductive inference
+    </li>
+  </ul>
+</section>
+
+
+      <!-- Publications -->
       <section id="publications">
-        <h2 class="text-2xl font-semibold mb-2">Publications</h2>
+        <h2 class="text-2xl font-semibold mb-2">📚 Publications</h2>
         <ul class="list-disc pl-6 space-y-2">
-            <li>
-            Zhou, L., Sadraoui, A., <i>et al.</i> (2025). 
-            <b>UNEM: UNrolled Generalized EM for Transductive Few-Shot Learning</b>. 
-            <i>Computer Vision and Pattern Recognition Conference (CVPR 2025)</i>.
-          </li>
-          <li>
-            Laurent-Bellue, A., Sadraoui, A., <i>et al.</i> (2024). 
-            <b>Deep Learning Classification and Quantification of Pejorative and Nonpejorative Architectures in Resected Hepatocellular Carcinoma from Digital Histopathologic Images</b>. 
-            <i>The American Journal of Pathology</i>.
-          </li>
-          <li>
-            Sadraoui, A., Martin, S., <i>et al.</i> (2024). 
-            <b>A transductive few-shot learning approach for classification of digital histopathological slides from liver cancer</b>. 
-            <i>IEEE ISBI 2024</i>.
-          </li>
-          <li>
-            Sadraoui, A., Laurent-Bellue, A., <i>et al.</i> (2024). 
-            <b>Unrolled projected gradient algorithm for stain separation in digital histopathological images</b>. 
-            <i>IEEE ICIP 2024</i>.
-          </li>
+          <li>Zhou, L., Sadraoui, A., <i>et al.</i> (2025). <b>UNEM: UNrolled Generalized EM for Transductive Few-Shot Learning</b>. <i>CVPR 2025</i></li>
+          <li>Laurent-Bellue, A., Sadraoui, A., <i>et al.</i> (2024). <b>Deep Learning Classification and Quantification of Pejorative and Nonpejorative Architectures in Resected Hepatocellular Carcinoma</b>. <i>The American Journal of Pathology</i></li>
+          <li>Sadraoui, A., Martin, S., <i>et al.</i> (2024). <b>A transductive few-shot learning approach for classification of digital histopathological slides</b>. <i>IEEE ISBI 2024</i></li>
+          <li>Sadraoui, A., Laurent-Bellue, A., <i>et al.</i> (2024). <b>Unrolled projected gradient algorithm for stain separation in digital histopathological images</b>. <i>IEEE ICIP 2024</i></li>
         </ul>
       </section>
 
+      <!-- Achievements -->
       <section id="awards">
-        <h2 class="text-2xl font-semibold mb-2">Achievements</h2>
+        <h2 class="text-2xl font-semibold mb-2">🏆 Achievements</h2>
         <p>
-          🏆 1st Place (out of 256 team)— <b>DigiLut Data Challenge for Lung Transplant Rejection</b> organized by Hôpital Foch and Bpifrance.  
-          Represented CVN, CentraleSupélec, Université Paris-Saclay, Inria, and OPIS.
+          🥇 1st Place (out of 256 teams) — <b>DigiLut Data Challenge for Lung Transplant Rejection</b> organized by Hôpital Foch and Bpifrance.  
+          Represented CVN, CentraleSupélec, Université Paris-Saclay, Inria, and OPIS.  
           <a href="https://www.linkedin.com/feed/update/urn:li:activity:7241338279902560256/" target="_blank" class="text-blue-600 hover:underline">DigiLut Data Challenge</a>
         </p>
       </section>
+
+      <!-- Contact -->
       <section id="contact">
-  <h2 class="text-2xl font-semibold mb-2">Contact</h2>
-  <p>
-    📧 <a href="mailto:aymen.sadraoui@centralesupelec.fr" class="text-blue-600 hover:underline">aymen.sadraoui@centralesupelec.fr</a>
-  <p>
-    📧 <a href="mailto:aymensadraoui1919@gmail.com" class="text-blue-600 hover:underline"> aymensadraoui1919@gmail.com</a>  
-  </p>
-        <br>
-    📞 +33 (0)7 65 68 52 67<br>
-    📍 Centre de Vision Numérique, CentraleSupélec, Gif-sur-Yvette, 91190, France
-  </p>
-</section>
+        <h2 class="text-2xl font-semibold mb-2">✉️ Contact</h2>
+        <p>
+          📧 <a href="mailto:aymen.sadraoui@centralesupelec.fr" class="text-blue-600 hover:underline">aymen.sadraoui@centralesupelec.fr</a><br>
+          📧 <a href="mailto:aymensadraoui1919@gmail.com" class="text-blue-600 hover:underline">aymensadraoui1919@gmail.com</a><br>
+          📞 +33 (0)7 65 68 52 67<br>
+          📍 Centre de Vision Numérique, CentraleSupélec, Gif-sur-Yvette, 91190, France
+        </p>
+      </section>
+
     </main>
 
+    <!-- Footer -->
     <footer class="mt-10 text-center text-gray-500 text-sm">
       © 2025 Aymen Sadraoui.
     </footer>
+
   </div>
+
+  <script>
+    // Highlight nav link based on scroll
+    const sections = document.querySelectorAll("section");
+    const navLinks = document.querySelectorAll("nav a");
+
+    window.addEventListener("scroll", () => {
+      let current = "";
+      sections.forEach(section => {
+        const sectionTop = section.offsetTop - 100;
+        if (scrollY >= sectionTop) current = section.getAttribute("id");
+      });
+      navLinks.forEach(link => {
+        link.classList.remove("active");
+        if (link.getAttribute("href") === "#" + current) {
+          link.classList.add("active");
+        }
+      });
+    });
+  </script>
+
 </body>
 </html>
