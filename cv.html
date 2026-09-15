@@ -7,118 +7,119 @@
   <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
   <link rel="stylesheet" href="style.css" />
 </head>
-<body class="bg-gray-50 text-gray-800 font-sans">
-  <div class="max-w-3xl mx-auto p-8">
-    <header class="flex flex-col items-center text-center">
-      <img src="figures/professional_photo2.png" alt="Aymen Sadraoui" class="w-32 h-32 rounded-full shadow mb-4">
-      <h1 class="text-3xl font-bold mb-2">Aymen Sadraoui</h1>
-      <p class="text-lg text-gray-600">Data scientist — DEEMEA, Paris, France</p>
-      <div class="mt-4 space-x-4">
-        <a href="index.html" class="text-blue-600 hover:underline">Home</a>
-        <a href="https://github.com/aymensadraoui" target="_blank" class="text-blue-600 hover:underline">GitHub</a>
-        <a href="https://www.linkedin.com/in/aymen-sadraoui-abb571288/" target="_blank" class="text-blue-600 hover:underline">LinkedIn</a>
+<body class="cv-page">
+  <div class="cv-shell">
+    <header class="cv-header">
+      <div class="cv-identity">
+        <img src="figures/professional_photo2.png" alt="Aymen Sadraoui" class="cv-photo" />
+        <div>
+          <h1>Aymen Sadraoui</h1>
+          <p class="cv-role">Data Scientist • DEEMEA • Paris, France</p>
+          <div class="cv-links">
+            <a href="index.html">Home</a>
+            <a href="https://github.com/aymensadraoui" target="_blank" rel="noreferrer">GitHub</a>
+            <a href="https://www.linkedin.com/in/aymen-sadraoui-abb571288/" target="_blank" rel="noreferrer">LinkedIn</a>
+            <a href="https://scholar.google.com/citations?user=OHURXa0AAAAJ&hl=en" target="_blank" rel="noreferrer">Google Scholar</a>
+          </div>
+        </div>
       </div>
     </header>
 
-    <main class="mt-10 space-y-8">
-    <!-- Experience -->
-<!-- Experience -->
-<section id="experience">
-  <h2 class="text-2xl font-semibold mb-4">💼 Experience</h2>
-  <ul class="space-y-6">
+    <main class="cv-main">
+      <div class="cv-column">
+        <section id="experience" class="cv-section">
+          <h2>Experience</h2>
+          <ul class="cv-list">
+            <li class="cv-item">
+              <span class="meta">2026 — Present</span>
+              <strong>Data Scientist — DEEMEA, Paris, France</strong>
+              <span class="detail">Developing AI-driven approaches for medical and imaging data structuring, clinical data science workflows, and trustworthy predictive models for healthcare research.</span>
+            </li>
+            <li class="cv-item">
+              <span class="meta">2022 — 2026</span>
+              <strong>PhD Student — CentraleSupélec, Gif-sur-Yvette, France</strong>
+              <span class="detail">Research on AI methods for diagnosis and prognosis of Hepatocellular Carcinoma from histopathological whole-slide images.</span>
+            </li>
+            <li class="cv-item">
+              <span class="meta">2021</span>
+              <strong>Research Internship — CentraleSupélec, Gif-sur-Yvette, France</strong>
+              <span class="detail">Neural Networks for Digital Liver Slide Analysis. Focus: liver cancer, image processing, deep learning, convolutional neural networks.</span>
+            </li>
+            <li class="cv-item">
+              <span class="meta">2020</span>
+              <strong>Engineering Internship — SUP'COM, Ariana, Tunisia</strong>
+              <span class="detail">Study of water quality using deep learning, with emphasis on turbidity detection, image processing, and neural networks.</span>
+            </li>
+            <li class="cv-item">
+              <span class="meta">2019</span>
+              <strong>Workman Internship — Tunisie Télécom, Bizerte, Tunisia</strong>
+              <span class="detail">Practical exposure to the corporate environment and operational workflows in a telecom setting.</span>
+            </li>
+          </ul>
+        </section>
 
-        <!-- PhD -->
-    <li>
-      <p class="font-bold text-gray-800">Data scientist — DEEMEA, Paris, France (2026-present)</p>
-      <p class="text-gray-600">
-        <i>Missions:</i> Build reliable, secure, and clinically meaningful data science solutions through AI-driven analysis of medical and imaging data to accelerate research and improve patients' access to innovative therapies.
-      </p>
-    </li>
+        <section id="education" class="cv-section">
+          <h2>Education</h2>
+          <ul class="cv-list">
+            <li class="cv-item">
+              <span class="meta">2018 — 2021</span>
+              <strong>National Degree of Engineer in Image/Signal Processing</strong>
+              <span class="detail">École Polytechnique de Tunisie, La Marsa, Tunisia.</span>
+              <span class="detail">Focus: data science, image analysis, and applied mathematics.</span>
+            </li>
+            <li class="cv-item">
+              <span class="meta">2016 — 2018</span>
+              <strong>Preparatory Classes Diploma</strong>
+              <span class="detail">Institut Préparatoire aux Études d’Ingénieur de Bizerte, Tunisia.</span>
+              <span class="detail">Rank: 63/1773 (top 3%) in the national engineering access exam.</span>
+            </li>
+          </ul>
+        </section>
+      </div>
 
-    <!-- PhD -->
-    <li>
-      <p class="font-bold text-gray-800">PhD Student — CentraleSupélec, Gif-sur-Yvette, France (2022-2026)</p>
-      <p class="text-gray-600">
-        <i>Topic:</i> Developing AI models for diagnostics and prognostics of Hepatocellular Carcinoma (HCC) from histopathological whole slide images.
-      </p>
-    </li>
+      <aside class="cv-side">
+        <section class="cv-side-card">
+          <h3>Skills</h3>
+          <div class="skill-chips">
+            <span class="skill-chip">Machine Learning</span>
+            <span class="skill-chip">Deep Learning</span>
+            <span class="skill-chip">PyTorch</span>
+            <span class="skill-chip">Scikit-learn</span>
+            <span class="skill-chip">Medical Imaging</span>
+            <span class="skill-chip">Optimization</span>
+            <span class="skill-chip">Python</span>
+            <span class="skill-chip">Docker</span>
+            <span class="skill-chip">Linux</span>
+            <span class="skill-chip">NumPy</span>
+            <span class="skill-chip">Pandas</span>
+            <span class="skill-chip">OpenCV</span>
+          </div>
+        </section>
 
-    <!-- Research Internship -->
-    <li>
-      <p class="font-bold text-gray-800">Research Internship — CentraleSupélec, Gif-sur-Yvette, France (6 months, 2021)</p>
-      <p class="text-gray-600">
-        <i>Internship subject:</i> Neural Networks for Digital Liver Slides Analysis. <br>
-        <i>Keywords:</i> Liver Cancer, Hepatocellular Carcinoma, Image Processing, Deep Learning, Convolutional Neural Networks.
-      </p>
-    </li>
+        <section class="cv-side-card">
+          <h3>Technical Focus</h3>
+          <div class="cv-marquee">
+            <div class="detail">Medical image analysis</div>
+            <div class="detail">Computational pathology</div>
+            <div class="detail">Few-shot learning</div>
+            <div class="detail">Algorithm unrolling</div>
+            <div class="detail">Clinical AI</div>
+          </div>
+        </section>
 
-    <!-- Engineering Internship -->
-    <li>
-      <p class="font-bold text-gray-800">Engineering Internship — SUP'COM, Ariana, Tunisia (2 months, 2020)</p>
-      <p class="text-gray-600">
-        Internship subject: Study of Water Quality using Deep Learning. <br>
-        <i>Keywords:</i> Turbidity Detection, Image Processing, Neural Networks.
-      </p>
-    </li>
-
-    <!-- Workman Internship -->
-    <li>
-      <p class="font-bold text-gray-800">Workman Internship — Tunisie Télécom, Bizerte, Tunisia (1 month, 2019)</p>
-      <p class="text-gray-600">
-        The aim of this internship is to become familiar with the corporate world.
-      </p>
-    </li>
-
-  </ul>
-</section>
-
-    <!-- Education -->
-    <section id="education">
-    <h2 class="text-2xl font-semibold mb-2">🎓 Education</h2>
-    <ul class="list-disc pl-6 space-y-2">
-        <li>
-        <b>National Degree of Engineer in image/signal processing</b> — École Polytechnique de Tunisie, La Marsa, Tunisia 2018-2021  
-        <span class="text-gray-600"> <br>Focus on data science, and image analysis with strong mathematical background.</span>
-        </li>
-        <li>
-        <b>Preparatory classes diploma</b> — Institut Préparatoire aux Études d'Ingénieur de Bizerte, Tunisia. 2016-2018.  
-        <span class="text-gray-600"> <br> National Exam of Access to Engineering Schools. Rank : 63/1773
-(Top 3%)</span>
-        </li>
-    </ul>
-    </section>
-
-      <section id="skills">
-        <h2 class="text-2xl font-semibold mb-2">⚙️ Skills</h2>
-        <ul class="list-disc pl-6 space-y-2">
-          <li>Machine & Deep Learning: Scikit-learn, PyTorch</li>
-          <li>Optimization & Algorithm Unrolling</li>
-          <li>Medical Image Analysis</li>
-          <li>Programming: Python, Bash, Docker, Linux</li>
-          <li>Data Analysis: NumPy, Pandas, Openslide, Opencv</li>
-        </ul>
-      </section>
-
-      <!-- Extra-Curricular Activities -->
-    <section id="activities" class="mt-8">
-    <h2 class="text-2xl font-semibold mb-4">Extra-Curricular Activities</h2>
-    <ul class="list-disc pl-6 space-y-2 text-gray-700">
-
-        🏊 <span class="font-bold">Swimming:</span> Regular swimmer for fitness and endurance <br>
-
-        🏋‍♂️  <span class="font-bold">Sport:</span> Engaged in several sports to maintain an active lifestyle <br>
-
-        🌱 <span class="font-bold">Gardening:</span> Passionate about growing and maintaining plants <br>
-
-        🎬 <span class="font-bold">Cinema:</span> Cinephile with a particular interest in world cinema from diverse cultural backgrounds <br>
-
-    </ul>
-    </section>
+        <section class="cv-side-card">
+          <h3>Interests</h3>
+          <div class="cv-marquee">
+            <div class="detail">Swimming</div>
+            <div class="detail">Sport and fitness</div>
+            <div class="detail">Gardening</div>
+            <div class="detail">Cinema and cultural exploration</div>
+          </div>
+        </section>
+      </aside>
     </main>
 
-    <footer class="mt-10 text-center text-gray-500 text-sm">
-      © 2026 Aymen Sadraoui.
-    </footer>
+    <footer class="footer">© 2026 Aymen Sadraoui</footer>
   </div>
 </body>
 </html>
