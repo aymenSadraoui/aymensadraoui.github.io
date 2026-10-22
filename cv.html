@@ -3,117 +3,202 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Aymen Sadraoui | CV</title>
-  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <title>Aymen Sadraoui, PhD | CV</title>
+  <meta name="description" content="CV of Aymen Sadraoui, PhD — Data Scientist & Machine Learning Engineer specialized in medical imaging, deep learning, MLOps and data engineering.">
+  <meta name="robots" content="index, follow">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
   <link rel="stylesheet" href="style.css" />
 </head>
 <body class="cv-page">
-  <div class="cv-shell">
-    <header class="cv-header">
-      <div class="cv-identity">
-        <img src="figures/professional_photo2.png" alt="Aymen Sadraoui" class="cv-photo" />
-        <div>
-          <h1>Aymen Sadraoui</h1>
-          <p class="cv-role">Data Scientist • DEEMEA • Paris, France</p>
-          <div class="cv-links">
-            <a href="index.html">Home</a>
-            <a href="https://github.com/aymensadraoui" target="_blank" rel="noreferrer">GitHub</a>
-            <a href="https://www.linkedin.com/in/aymen-sadraoui-abb571288/" target="_blank" rel="noreferrer">LinkedIn</a>
-            <a href="https://scholar.google.com/citations?user=OHURXa0AAAAJ&hl=en" target="_blank" rel="noreferrer">Google Scholar</a>
-          </div>
+  <div class="bg-glow" aria-hidden="true"><span></span><span></span><span></span></div>
+
+  <nav class="topbar" aria-label="Main navigation">
+    <div class="topbar-inner">
+      <div class="brand">Aymen <b>Sadraoui</b></div>
+      <div class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="index.html#publications">Publications</a>
+        <a href="index.html#contact">Contact</a>
+        <a href="CV_AS.pdf" class="nav-cta" target="_blank" rel="noopener">Download PDF</a>
+      </div>
+    </div>
+  </nav>
+
+  <div class="site-shell">
+    <header class="glass cv-header">
+      <img src="figures/professional_photo2.png" alt="Aymen Sadraoui" class="cv-photo"
+           onerror="this.src='figures/profile.jpg'" />
+      <div>
+        <h1>Aymen Sadraoui, Ph.D.</h1>
+        <p class="cv-role">Data Scientist & Machine Learning Engineer · Deemea · Paris, France</p>
+        <div class="cv-contact">
+          <span><i class="fa-solid fa-envelope"></i><a href="mailto:aymensadraoui1919@gmail.com">aymensadraoui1919@gmail.com</a></span>
+          <span><i class="fa-brands fa-linkedin-in"></i><a href="https://www.linkedin.com/in/aymen-sadraoui-abb571288/" target="_blank" rel="noreferrer">LinkedIn</a></span>
+          <span><i class="fa-brands fa-github"></i><a href="https://github.com/aymensadraoui" target="_blank" rel="noreferrer">GitHub</a></span>
+          <span><i class="fa-solid fa-graduation-cap"></i><a href="https://scholar.google.com/citations?user=OHURXa0AAAAJ&hl=en" target="_blank" rel="noreferrer">Google Scholar</a></span>
         </div>
+      </div>
+      <div class="cv-actions">
+        <a class="btn btn-primary" href="CV_AS.pdf" target="_blank" rel="noopener"><i class="fa-solid fa-download"></i> PDF</a>
+        <a class="btn btn-secondary" href="#" onclick="window.print();return false;"><i class="fa-solid fa-print"></i> Print</a>
       </div>
     </header>
 
-    <main class="cv-main">
-      <div class="cv-column">
-        <section id="experience" class="cv-section">
-          <h2>Experience</h2>
-          <ul class="cv-list">
-            <li class="cv-item">
-              <span class="meta">2026 — Present</span>
-              <strong>Data Scientist — DEEMEA, Paris, France</strong>
-              <span class="detail">Developing AI-driven approaches for medical and imaging data structuring, clinical data science workflows, and trustworthy predictive models for healthcare research.</span>
-            </li>
-            <li class="cv-item">
-              <span class="meta">2022 — 2026</span>
-              <strong>PhD Student — CentraleSupélec, Gif-sur-Yvette, France</strong>
-              <span class="detail">Research on AI methods for diagnosis and prognosis of Hepatocellular Carcinoma from histopathological whole-slide images.</span>
-            </li>
-            <li class="cv-item">
-              <span class="meta">2021</span>
-              <strong>Research Internship — CentraleSupélec, Gif-sur-Yvette, France</strong>
-              <span class="detail">Neural Networks for Digital Liver Slide Analysis. Focus: liver cancer, image processing, deep learning, convolutional neural networks.</span>
-            </li>
-            <li class="cv-item">
-              <span class="meta">2020</span>
-              <strong>Engineering Internship — SUP'COM, Ariana, Tunisia</strong>
-              <span class="detail">Study of water quality using deep learning, with emphasis on turbidity detection, image processing, and neural networks.</span>
-            </li>
-            <li class="cv-item">
-              <span class="meta">2019</span>
-              <strong>Workman Internship — Tunisie Télécom, Bizerte, Tunisia</strong>
-              <span class="detail">Practical exposure to the corporate environment and operational workflows in a telecom setting.</span>
-            </li>
-          </ul>
+    <main class="cv-layout">
+      <div>
+        <section class="glass cv-section">
+          <h2><i class="fa-solid fa-user"></i>Professional summary</h2>
+          <p class="lead">
+            Data Scientist and Machine Learning Ph.D. graduate building robust predictive models and scalable
+            data engineering pipelines for high-dimensional, multimodal datasets. Hands-on expertise in deep learning,
+            representation learning and few-shot learning, with an evaluation-first methodology focused on calibration,
+            out-of-distribution generalization and reproducibility. Track record of turning mathematical research into
+            first-author publications at CVPR, ISBI and ICIP, and of engineering production-grade ETL pipelines for AI systems.
+          </p>
         </section>
 
-        <section id="education" class="cv-section">
-          <h2>Education</h2>
-          <ul class="cv-list">
-            <li class="cv-item">
-              <span class="meta">2018 — 2021</span>
-              <strong>National Degree of Engineer in Image/Signal Processing</strong>
-              <span class="detail">École Polytechnique de Tunisie, La Marsa, Tunisia.</span>
-              <span class="detail">Focus: data science, image analysis, and applied mathematics.</span>
-            </li>
-            <li class="cv-item">
-              <span class="meta">2016 — 2018</span>
-              <strong>Preparatory Classes Diploma</strong>
-              <span class="detail">Institut Préparatoire aux Études d’Ingénieur de Bizerte, Tunisia.</span>
-              <span class="detail">Rank: 63/1773 (top 3%) in the national engineering access exam.</span>
-            </li>
-          </ul>
+        <section id="experience" class="glass cv-section">
+          <h2><i class="fa-solid fa-briefcase"></i>Professional experience</h2>
+          <div class="timeline">
+            <div class="timeline-item">
+              <div class="meta">Feb 2026 — Present</div>
+              <h3>Data Scientist & Machine Learning Engineer</h3>
+              <div class="org">Deemea · Paris, France</div>
+              <ul class="bullets">
+                <li>Architected and deployed end-to-end automated ingestion and processing pipelines integrating hospital <b>PACS (DICOM)</b> and cloud platforms for multi-centric clinical studies.</li>
+                <li>Developed deep learning algorithms for automated image <b>quality control</b>, detecting motion artifacts, slice mismatches and data corruption prior to clinical review.</li>
+                <li>Engineered computer vision algorithms for diagnosis, segmentation and classification of radiology scans (<b>CT, X-ray, MRI</b>) across orthopedics, oncology and rheumatology.</li>
+                <li>Deployed containerized microservices (<b>Docker, Streamlit, PyTorch, CI/CD</b>) powering AI pre-annotations and interactive 3D visualizations for clinical operators.</li>
+                <li>Implemented <b>MLOps</b> frameworks for model calibration and data-drift detection to ensure out-of-distribution generalization across multi-site hospital data.</li>
+                <li>Partnered with radiologists, software engineers and clinical managers to translate clinical research requirements into production-ready features.</li>
+              </ul>
+            </div>
+
+            <div class="timeline-item">
+              <div class="meta">Jan 2022 — Jan 2026</div>
+              <h3>Ph.D. Researcher in AI & Computational Pathology</h3>
+              <div class="org">CentraleSupélec (OPIS / CVN Lab) & Kremlin-Bicêtre Hospital · Gif-sur-Yvette, France</div>
+              <ul class="bullets">
+                <li><b>Thesis:</b> AI-Driven Methods in Histopathology for the Diagnosis and Prognosis of Hepatocellular Carcinoma.</li>
+                <li><b>Clinical–technical interface:</b> primary bridge between ML researchers and senior pathologists; translated qualitative histopathological criteria into quantifiable ML objectives and validated features against clinical consensus.</li>
+                <li><b>Deep learning & optimization:</b> designed and unrolled proximal algorithms (Unrolled Projected Gradient, UNEM) into neural networks for stain separation, color normalization and transductive few-shot slide classification.</li>
+                <li><b>Terabyte-scale data engineering:</b> built ETL pipelines (PyTorch, OpenCV, Scikit-learn, OpenSlide, Optuna) to ingest, tile and curate 4+ TB of gigapixel whole-slide images, including multi-source artifact removal.</li>
+                <li><b>Multi-modal predictive modeling:</b> integrated architecture quantification with clinical metadata to predict early liver cancer recurrence.</li>
+                <li><b>MLOps & trustworthy AI:</b> created benchmarking frameworks for OOD generalization, calibration, uncertainty estimation and interpretability.</li>
+              </ul>
+            </div>
+
+            <div class="timeline-item">
+              <div class="meta">2021</div>
+              <h3>Research Internship — Digital Liver Slide Analysis</h3>
+              <div class="org">CentraleSupélec · Gif-sur-Yvette, France</div>
+              <ul class="bullets"><li>Convolutional neural networks for liver cancer analysis on digital slides.</li></ul>
+            </div>
+
+            <div class="timeline-item">
+              <div class="meta">2020</div>
+              <h3>Engineering Internship — Water Quality with Deep Learning</h3>
+              <div class="org">SUP'COM · Ariana, Tunisia</div>
+              <ul class="bullets"><li>Turbidity detection using image processing and neural networks.</li></ul>
+            </div>
+          </div>
+        </section>
+
+        <section id="education" class="glass cv-section">
+          <h2><i class="fa-solid fa-graduation-cap"></i>Education</h2>
+          <div class="timeline">
+            <div class="timeline-item">
+              <div class="meta">2022 — 2026</div>
+              <h3>Ph.D. in Machine Learning & Artificial Intelligence</h3>
+              <div class="org">CentraleSupélec, Université Paris-Saclay · Gif-sur-Yvette, France</div>
+            </div>
+            <div class="timeline-item">
+              <div class="meta">2018 — 2021</div>
+              <h3>Engineering Degree in Signals and Systems Processing</h3>
+              <div class="org">École Polytechnique de Tunisie · La Marsa, Tunisia</div>
+            </div>
+            <div class="timeline-item">
+              <div class="meta">2016 — 2018</div>
+              <h3>Preparatory Classes Diploma</h3>
+              <div class="org">IPEI Bizerte, Tunisia · Rank 63 / 1,773 (top 3%) in the national engineering exam</div>
+            </div>
+          </div>
+        </section>
+
+        <section id="publications" class="glass cv-section">
+          <h2><i class="fa-solid fa-book-open"></i>Publications</h2>
+          <ol class="pub-list">
+            <li>Sadraoui, A., et al. (2026). <em>A Proximal Approach for Stain Separation and Normalization of Whole-Slide Histopathological Images.</em> IEEE ISBI. <a href="https://hal.science/hal-05511612/document" target="_blank" rel="noopener">PDF</a></li>
+            <li>Sadraoui, A., et al. (2025). <em>UNEM: UNrolled Generalized EM for Transductive Few-Shot Learning.</em> CVPR. <a href="https://openaccess.thecvf.com/content/CVPR2025/papers/Zhou_UNEM_UNrolled_Generalized_EM_for_Transductive_Few-Shot_Learning_CVPR_2025_paper.pdf" target="_blank" rel="noopener">PDF</a></li>
+            <li>Sadraoui, A., et al. (2024). <em>Deep Learning Classification and Quantification of Pejorative and Nonpejorative Architectures in Resected Hepatocellular Carcinoma from Digital Histopathologic Images.</em> The American Journal of Pathology. <a href="https://www.sciencedirect.com/science/article/pii/S0002944024002062" target="_blank" rel="noopener">Link</a></li>
+            <li>Sadraoui, A., et al. (2024). <em>Unrolled Projected Gradient Algorithm for Stain Separation in Digital Histopathological Images.</em> IEEE ICIP. <a href="https://hal.science/hal-04444439v1/file/ICIP_2024_stainDeconv.pdf" target="_blank" rel="noopener">PDF</a></li>
+            <li>Sadraoui, A., et al. (2024). <em>A Transductive Few-Shot Learning Approach for Classification of Digital Histopathological Slides from Liver Cancer.</em> IEEE ISBI. <a href="https://arxiv.org/pdf/2311.17740" target="_blank" rel="noopener">arXiv</a></li>
+          </ol>
         </section>
       </div>
 
       <aside class="cv-side">
-        <section class="cv-side-card">
-          <h3>Skills</h3>
-          <div class="skill-chips">
-            <span class="skill-chip">Machine Learning</span>
-            <span class="skill-chip">Deep Learning</span>
-            <span class="skill-chip">PyTorch</span>
-            <span class="skill-chip">Scikit-learn</span>
-            <span class="skill-chip">Medical Imaging</span>
-            <span class="skill-chip">Optimization</span>
-            <span class="skill-chip">Python</span>
-            <span class="skill-chip">Docker</span>
-            <span class="skill-chip">Linux</span>
-            <span class="skill-chip">NumPy</span>
-            <span class="skill-chip">Pandas</span>
-            <span class="skill-chip">OpenCV</span>
+        <section class="glass">
+          <h3><i class="fa-solid fa-code"></i> Core tech</h3>
+          <div class="chip-row">
+            <span class="chip"><img src="https://cdn.simpleicons.org/python/4b8bbe" alt="" onerror="this.remove()">Python</span>
+            <span class="chip"><img src="https://cdn.simpleicons.org/pytorch/ee4c2c" alt="" onerror="this.remove()">PyTorch</span>
+            <span class="chip"><img src="https://cdn.simpleicons.org/opencv/8b7bff" alt="" onerror="this.remove()">OpenCV</span>
+            <span class="chip"><img src="https://cdn.simpleicons.org/scikitlearn/f7931e" alt="" onerror="this.remove()">Scikit-learn</span>
+            <span class="chip"><img src="https://cdn.simpleicons.org/docker/2496ed" alt="" onerror="this.remove()">Docker</span>
+            <span class="chip"><img src="https://cdn.simpleicons.org/mlflow/0194e2" alt="" onerror="this.remove()">MLflow</span>
+            <span class="chip"><img src="https://cdn.simpleicons.org/streamlit/ff4b4b" alt="" onerror="this.remove()">Streamlit</span>
+            <span class="chip"><img src="https://cdn.simpleicons.org/githubactions/2088ff" alt="" onerror="this.remove()">CI/CD</span>
+            <span class="chip"><img src="https://cdn.simpleicons.org/git/f05032" alt="" onerror="this.remove()">Git</span>
+            <span class="chip"><img src="https://cdn.simpleicons.org/linux/fcc624" alt="" onerror="this.remove()">Linux</span>
+            <span class="chip"><i class="fa-solid fa-diagram-project"></i>ETL / ELT</span>
+            <span class="chip"><i class="fa-solid fa-sliders"></i>Optuna</span>
+            <span class="chip"><i class="fa-solid fa-microscope"></i>OpenSlide</span>
           </div>
         </section>
 
-        <section class="cv-side-card">
-          <h3>Technical Focus</h3>
-          <div class="cv-marquee">
-            <div class="detail">Medical image analysis</div>
-            <div class="detail">Computational pathology</div>
-            <div class="detail">Few-shot learning</div>
-            <div class="detail">Algorithm unrolling</div>
-            <div class="detail">Clinical AI</div>
+        <section class="glass">
+          <h3><i class="fa-solid fa-flask"></i> Research skills</h3>
+          <div class="chip-row">
+            <span class="chip"><i class="fa-solid fa-eye"></i>Computer vision</span>
+            <span class="chip"><i class="fa-solid fa-bullseye"></i>Optimization</span>
+            <span class="chip"><i class="fa-solid fa-brain"></i>Deep learning</span>
+            <span class="chip"><i class="fa-solid fa-clone"></i>Few-shot learning</span>
+            <span class="chip"><i class="fa-solid fa-diagram-next"></i>Algorithm unrolling</span>
+            <span class="chip"><i class="fa-solid fa-microscope"></i>Computational pathology</span>
+            <span class="chip"><i class="fa-solid fa-x-ray"></i>Medical imaging</span>
+            <span class="chip"><i class="fa-solid fa-shield-halved"></i>Trustworthy AI</span>
+            <span class="chip"><i class="fa-solid fa-scale-balanced"></i>Calibration & uncertainty</span>
           </div>
         </section>
 
-        <section class="cv-side-card">
-          <h3>Interests</h3>
-          <div class="cv-marquee">
-            <div class="detail">Swimming</div>
-            <div class="detail">Sport and fitness</div>
-            <div class="detail">Gardening</div>
-            <div class="detail">Cinema and cultural exploration</div>
+        <section class="glass">
+          <h3><i class="fa-solid fa-trophy"></i> Achievements</h3>
+          <ul class="bullets">
+            <li><b>1st place</b> (of 256 teams) — Lung Transplant Rejection Challenge, Hôpital Foch & Health Data Hub (2024)</li>
+            <li><b>Rank 63 / 1,773</b> (top 3%) — National Engineering Entrance Exam, Tunisia (2018)</li>
+          </ul>
+        </section>
+
+        <section class="glass">
+          <h3><i class="fa-solid fa-language"></i> Languages</h3>
+          <div class="chip-row">
+            <span class="chip">English · Fluent</span>
+            <span class="chip">French · Fluent</span>
+            <span class="chip">Arabic · Native</span>
+          </div>
+        </section>
+
+        <section class="glass">
+          <h3><i class="fa-solid fa-heart"></i> Interests</h3>
+          <div class="chip-row">
+            <span class="chip">Swimming</span>
+            <span class="chip">Sport & fitness</span>
+            <span class="chip">Gardening</span>
+            <span class="chip">Cinema & culture</span>
           </div>
         </section>
       </aside>

@@ -3,411 +3,555 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Aymen Sadraoui, PhD | AI & Medical imaging</title>
+  <title>Aymen Sadraoui, PhD | Data Scientist & ML Engineer — Medical Imaging</title>
 
-  <!-- SEO META TAGS -->
-  <meta name="title" content="Aymen Sadraoui, PhD | AI & Medical imaging">
-  <meta name="description" content="Data scientist at DEEMEA. Research on deep learning and medical imaging.">
-  <meta name="keywords" content="Aymen Sadraoui, PhD., AI, Deep Learning, PhD, CentraleSupélec, Paris-Saclay, Computational Pathology, HCC, Histopathology, Machine Learning, Image Analysis">
+  <!-- SEO -->
+  <meta name="title" content="Aymen Sadraoui, PhD | Data Scientist & ML Engineer — Medical Imaging">
+  <meta name="description" content="Data Scientist & Machine Learning Engineer at Deemea. PhD in AI for computational pathology (CentraleSupélec). Deep learning, medical imaging, MLOps and data engineering.">
+  <meta name="keywords" content="Aymen Sadraoui, Data Scientist, Machine Learning Engineer, MLOps, Deep Learning, Computer Vision, Medical Imaging, Computational Pathology, CentraleSupélec, Paris-Saclay, Few-Shot Learning, Optimization, PyTorch, Docker, MLflow">
   <meta name="author" content="Aymen Sadraoui">
   <meta name="robots" content="index, follow">
   <link rel="canonical" href="https://aymensadraoui.github.io/">
-  <link
-  rel="stylesheet"
-  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Aymen Sadraoui, PhD — Data Scientist & ML Engineer">
+  <meta property="og:description" content="AI for medical imaging and computational pathology. CVPR, ISBI, ICIP. 1st place Lung Transplant Rejection Challenge.">
+  <meta property="og:url" content="https://aymensadraoui.github.io/">
 
-  <!-- GOOGLE VERIFICATION (replace content with real token from Search Console) -->
-<meta name="google-site-verification" content="VeVWXUzPLuRepDtVKsMS8NQXggTXepvUsp4JI22kkTM" />
+  <meta name="google-site-verification" content="VeVWXUzPLuRepDtVKsMS8NQXggTXepvUsp4JI22kkTM" />
 
-  <!-- CSS -->
-  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <!-- Fonts & icons -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
   <link rel="stylesheet" href="style.css" />
-
-  <style>
-    html { scroll-behavior: smooth; }
-    nav a:hover { color: #2563eb; }
-    nav a.active { font-weight: bold; text-decoration: underline; }
-  </style>
 </head>
 <body>
+  <div class="bg-glow" aria-hidden="true"><span></span><span></span><span></span></div>
+
   <nav class="topbar" aria-label="Main navigation">
     <div class="topbar-inner">
-      <div class="brand">Aymen Sadraoui</div>
+      <div class="brand">Aymen <b>Sadraoui</b></div>
       <div class="nav-links">
         <a href="#about">About</a>
+        <a href="#experience">Experience</a>
+        <a href="#stack">Tech Stack</a>
         <a href="#research">Research</a>
         <a href="#publications">Publications</a>
         <a href="#awards">Achievements</a>
         <a href="#contact">Contact</a>
-        <a href="cv.html">CV</a>
+        <a href="cv.html" class="nav-cta">CV</a>
       </div>
     </div>
   </nav>
 
   <div class="site-shell">
+    <!-- ================= HERO ================= -->
     <header class="hero">
-      <div class="hero-card">
-        <div class="hero-grid">
-          <div>
-            <div class="eyebrow">Researcher • Data Scientist</div>
-            <h1>Aymen <span class="accent">Sadraoui</span>, PhD</h1>
-            <p class="hero-copy">
-              I develop machine learning and computational imaging methods for biomedical discovery,
-              clinical decision support, and trusted AI in healthcare.
-            </p>
-            <div class="hero-actions">
-              <a class="btn btn-primary" href="#publications">View research</a>
-              <a class="btn btn-secondary" href="cv.html">Download CV</a>
-            </div>
-            <div class="social-links">
-              <a href="https://scholar.google.com/citations?user=OHURXa0AAAAJ&hl=en" target="_blank" rel="noreferrer">Google Scholar</a>
-              <a href="https://www.linkedin.com/in/aymen-sadraoui-abb571288/" target="_blank" rel="noreferrer">LinkedIn</a>
-              <a href="https://github.com/aymensadraoui" target="_blank" rel="noreferrer">GitHub</a>
-            </div>
+      <canvas id="network" aria-hidden="true"></canvas>
+      <div class="hero-grid">
+        <div>
+          <div class="eyebrow"><span class="dot"></span> Available for new opportunities • Paris, France</div>
+          <h1>Aymen <span class="accent">Sadraoui</span>, PhD</h1>
+          <p class="typed-line"><span id="typed"></span><span class="cursor"></span></p>
+          <p class="hero-copy">
+            I build robust predictive models and production-grade data pipelines for high-dimensional,
+            multimodal medical data — from gigapixel pathology slides to CT, MRI and X-ray —
+            with an evaluation-first mindset: calibration, out-of-distribution generalization, reproducibility.
+          </p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#publications"><i class="fa-solid fa-flask"></i> View research</a>
+            <a class="btn btn-secondary" href="CV_AS.pdf" target="_blank" rel="noopener"><i class="fa-solid fa-download"></i> Download CV</a>
+            <a class="btn btn-secondary" href="#contact"><i class="fa-solid fa-envelope"></i> Contact me</a>
           </div>
+          <div class="social-links">
+            <a href="https://scholar.google.com/citations?user=OHURXa0AAAAJ&hl=en" target="_blank" rel="noreferrer" aria-label="Google Scholar" title="Google Scholar"><i class="fa-solid fa-graduation-cap"></i></a>
+            <a href="https://www.linkedin.com/in/aymen-sadraoui-abb571288/" target="_blank" rel="noreferrer" aria-label="LinkedIn" title="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="https://github.com/aymensadraoui" target="_blank" rel="noreferrer" aria-label="GitHub" title="GitHub"><i class="fa-brands fa-github"></i></a>
+            <a href="mailto:aymensadraoui1919@gmail.com" aria-label="Email" title="Email"><i class="fa-solid fa-envelope"></i></a>
+          </div>
+        </div>
 
-          <div class="profile-panel">
-            <div class="profile-card">
-              <img src="figures/profile.jpg" alt="Aymen Sadraoui" />
-              <div class="mini-stats">
-                <div class="stat-box">
-                  <strong>5+</strong>
-                  <span>Years</span>
-                </div>
-                <div class="stat-box">
-                  <strong>AI</strong>
-                  <span>Healthcare</span>
-                </div>
-                <div class="stat-box">
-                  <strong>Medical</strong>
-                  <span>Imaging</span>
-                </div>
-              </div>
+        <div class="profile-panel">
+          <div class="profile-card">
+            <div class="avatar-wrap">
+              <img src="figures/profile.jpg" alt="Portrait of Aymen Sadraoui"
+                   onerror="this.style.display='none';this.nextElementSibling.style.display='grid'" />
+              <div class="avatar-fallback accent" aria-hidden="true">AS</div>
+            </div>
+            <div class="mini-stats">
+              <div class="stat-box"><strong>PhD</strong><span>CentraleSupélec</span></div>
+              <div class="stat-box"><strong>ML</strong><span>Engineer</span></div>
+              <div class="stat-box"><strong>Med</strong><span>Imaging</span></div>
             </div>
           </div>
         </div>
       </div>
+
+      <div class="metrics">
+        <div class="glass metric reveal"><div class="num accent" data-count="5">0</div><div class="lbl">Peer-reviewed publications</div></div>
+        <div class="glass metric reveal"><div class="num accent"><span data-count="4">0</span>+ TB</div><div class="lbl">Gigapixel slides processed</div></div>
+        <div class="glass metric reveal"><div class="num accent">1<sup>st</sup>/256</div><div class="lbl">Lung transplant challenge teams</div></div>
+        <div class="glass metric reveal"><div class="num accent">Top 3%</div><div class="lbl">National engineering exam (63/1773)</div></div>
+      </div>
     </header>
 
     <main>
+      <!-- ================= ABOUT ================= -->
       <section id="about" class="content-section">
-        <div class="section-header">
+        <div class="section-header reveal">
           <div class="kicker">About</div>
-          <h2>Medical AI and computational pathology</h2>
+          <h2>From mathematical research to production AI</h2>
         </div>
 
-        <div class="section-card about-grid">
+        <div class="section-card about-grid reveal">
           <div>
             <p class="lead">
-              I am a <strong>Data Scientist at DEEMEA</strong>, where I design and validate AI-driven solutions for
-              the structuring and analysis of medical data across multi-modal healthcare workflows. My work sits at the
-              intersection of machine learning, medical imaging, and clinical data science where i turn complex biomedical data
-              into interpretable, reliable, and actionable insights for research and patient care.
+              I am a <strong>Data Scientist & Machine Learning Engineer at Deemea</strong>, where I architect
+              automated data ingestion pipelines connected to hospital PACS (DICOM), and deploy deep learning
+              models for image quality control, segmentation and diagnosis support in multi-centric clinical studies.
             </p>
-            <p class="lead" style="margin-top: 1rem;">
-              I am particularly interested in trustworthy AI systems that support collaborative, multi-centric clinical studies
-              while ensuring privacy, robustness, and scientific rigor. My research and engineering work combine deep learning,
-              optimization, and uncertainty-aware modeling to address real clinical needs.
+            <p class="lead">
+              I hold a <strong>PhD in Machine Learning & AI</strong> from CentraleSupélec (Université Paris-Saclay),
+              where I translated mathematical optimization into first-author publications at
+              <strong>CVPR, ISBI and ICIP</strong> — and served as the bridge between ML researchers and senior pathologists
+              to turn qualitative clinical criteria into measurable ML objectives.
             </p>
 
-            <div class="skill-list" aria-label="Research skills">
-              <span class="skill-pill">Medical Image Analysis</span>
+            <div class="skill-list" aria-label="Key strengths">
               <span class="skill-pill">Deep Learning</span>
-              <span class="skill-pill">Computational pathology</span>
-              <span class="skill-pill">Radiology</span>
+              <span class="skill-pill">Computer Vision</span>
+              <span class="skill-pill">Medical Image Analysis</span>
               <span class="skill-pill">Few-Shot Learning</span>
               <span class="skill-pill">Convex Optimization</span>
-              <span class="skill-pill">Clinical AI</span>
+              <span class="skill-pill">MLOps</span>
+              <span class="skill-pill">Data Engineering</span>
+              <span class="skill-pill">Trustworthy AI</span>
             </div>
           </div>
 
           <div class="info-stack">
-            <div class="info-box">
-              <strong>Current role</strong>
-              <span>Data Scientist, DEEMEA</span>
+            <div class="info-box"><strong>Current role</strong><span>Data Scientist & ML Engineer, Deemea</span></div>
+            <div class="info-box"><strong>Education</strong><span>PhD ML & AI · Engineering degree in Signal & Systems Processing</span></div>
+            <div class="info-box"><strong>Languages</strong><span>English (fluent) · French (fluent) · Arabic (native)</span></div>
+            <div class="info-box"><strong>Location</strong><span>Paris, France</span></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ================= EXPERIENCE ================= -->
+      <section id="experience" class="content-section">
+        <div class="section-header reveal">
+          <div class="kicker">Experience</div>
+          <h2>Where I've worked</h2>
+        </div>
+
+        <div class="timeline">
+          <div class="timeline-item reveal">
+            <div class="timeline-card">
+              <div class="meta">Feb 2026 — Present</div>
+              <h3>Data Scientist & Machine Learning Engineer</h3>
+              <div class="org"><i class="fa-solid fa-building"></i> Deemea · Paris, France</div>
+              <ul class="bullets">
+                <li><b>Data pipelines:</b> architected and deployed automated ingestion and processing pipelines integrating hospital PACS (DICOM) and cloud platforms for multi-centric clinical studies.</li>
+                <li><b>Quality control:</b> built deep learning algorithms to detect motion artifacts, slice mismatches and data corruption before clinical review.</li>
+                <li><b>Computer vision:</b> engineered automated diagnosis, segmentation and classification for CT, X-ray and MRI across orthopedics, oncology and rheumatology.</li>
+                <li><b>Production:</b> shipped containerized microservices (Docker, Streamlit, PyTorch, CI/CD) powering AI pre-annotations and interactive 3D visualizations for clinical operators.</li>
+                <li><b>MLOps:</b> implemented model calibration and data-drift detection to preserve out-of-distribution generalization across multi-site hospital data.</li>
+                <li><b>Collaboration:</b> worked with radiologists, software engineers and clinical managers to turn research needs into production features.</li>
+              </ul>
             </div>
-            <div class="info-box">
-              <strong>Research focus</strong>
-              <span>AI for medical image analysis and clinical decision support</span>
+          </div>
+
+          <div class="timeline-item reveal">
+            <div class="timeline-card">
+              <div class="meta">Jan 2022 — Jan 2026</div>
+              <h3>Ph.D. Researcher in AI & Computational Pathology</h3>
+              <div class="org"><i class="fa-solid fa-building-columns"></i> CentraleSupélec (OPIS / CVN Lab) & Kremlin-Bicêtre Hospital · Gif-sur-Yvette, France</div>
+              <ul class="bullets">
+                <li><b>Clinical–technical interface:</b> translated qualitative histopathological criteria into quantifiable ML objectives and validated automated features against clinical consensus.</li>
+                <li><b>Optimization meets deep learning:</b> unrolled proximal algorithms (Unrolled Projected Gradient, UNEM) into neural networks for stain separation, color normalization and transductive few-shot slide classification.</li>
+                <li><b>Terabyte-scale data engineering:</b> built ETL pipelines (PyTorch, OpenCV, Scikit-learn, OpenSlide, Optuna) to ingest, tile and curate 4+ TB of gigapixel whole-slide images.</li>
+                <li><b>Multi-modal prediction:</b> combined architecture quantification with clinical metadata to predict early liver-cancer recurrence.</li>
+                <li><b>Trustworthy AI:</b> created benchmarks for OOD generalization, calibration, uncertainty estimation and interpretability.</li>
+              </ul>
             </div>
-            <div class="info-box">
-              <strong>Location</strong>
-              <span>Paris, France</span>
+          </div>
+
+          <div class="timeline-item reveal">
+            <div class="timeline-card">
+              <div class="meta">2021</div>
+              <h3>Research Internship — Digital Liver Slide Analysis</h3>
+              <div class="org"><i class="fa-solid fa-building-columns"></i> CentraleSupélec · Gif-sur-Yvette, France</div>
+              <ul class="bullets"><li>Convolutional neural networks for liver cancer analysis on digital histology slides.</li></ul>
+            </div>
+          </div>
+
+          <div class="timeline-item reveal">
+            <div class="timeline-card">
+              <div class="meta">2020</div>
+              <h3>Engineering Internship — Water Quality with Deep Learning</h3>
+              <div class="org"><i class="fa-solid fa-building-columns"></i> SUP'COM · Ariana, Tunisia</div>
+              <ul class="bullets"><li>Turbidity detection from images using deep neural networks.</li></ul>
             </div>
           </div>
         </div>
       </section>
 
-        <section id="research" class="content-section">
-          <div class="section-header">
-            <div class="kicker">Research</div>
-            <h2>Research Areas & Expertise</h2>
+      <!-- ================= TECH STACK ================= -->
+      <section id="stack" class="content-section">
+        <div class="section-header reveal">
+          <div class="kicker">Tech stack</div>
+          <h2>Tools I ship with</h2>
+          <p class="section-sub">From research prototypes to containerized, monitored production services.</p>
+        </div>
+
+        <div class="section-card reveal">
+          <div class="tech-group-title">Languages & ML frameworks</div>
+          <div class="tech-grid">
+            <div class="tech-card"><img src="https://cdn.simpleicons.org/python/4b8bbe" alt="Python logo" loading="lazy" onerror="swapIcon(this,'fa-brands fa-python')"><span>Python</span></div>
+            <div class="tech-card"><img src="https://cdn.simpleicons.org/pytorch/ee4c2c" alt="PyTorch logo" loading="lazy" onerror="swapIcon(this,'fa-solid fa-fire')"><span>PyTorch</span></div>
+            <div class="tech-card"><img src="https://cdn.simpleicons.org/opencv/8b7bff" alt="OpenCV logo" loading="lazy" onerror="swapIcon(this,'fa-solid fa-eye')"><span>OpenCV</span></div>
+            <div class="tech-card"><img src="https://cdn.simpleicons.org/scikitlearn/f7931e" alt="Scikit-learn logo" loading="lazy" onerror="swapIcon(this,'fa-solid fa-chart-simple')"><span>Scikit-learn</span></div>
+            <div class="tech-card"><img src="https://cdn.simpleicons.org/numpy/4dabcf" alt="NumPy logo" loading="lazy" onerror="swapIcon(this,'fa-solid fa-calculator')"><span>NumPy</span></div>
+            <div class="tech-card"><img src="https://cdn.simpleicons.org/pandas/e70488" alt="Pandas logo" loading="lazy" onerror="swapIcon(this,'fa-solid fa-table')"><span>Pandas</span></div>
+            <div class="tech-card"><i class="fa-solid fa-sliders" aria-hidden="true"></i><span>Optuna</span></div>
+            <div class="tech-card"><i class="fa-solid fa-microscope" aria-hidden="true"></i><span>OpenSlide</span></div>
           </div>
 
-          <div class="expertise-grid">
-            <article class="expertise-card">
-              <h3>Mathematical Optimization</h3>
-              <p>
-                Mathematical foundations of machine learning and imaging, with expertise
-                in convex optimization, proximal algorithms, variational methods,
-                inverse problems, and algorithmic optimization.
-              </p>
-            </article>
-
-            <article class="expertise-card">
-              <h3>Medical Imaging & Radiology</h3>
-              <p>
-                Machine learning and deep learning for medical image analysis, with a
-                focus on robust representation learning, image reconstruction,
-                quantitative imaging, and computer-assisted diagnosis.
-              </p>
-            </article>
-
-            <article class="expertise-card">
-              <h3>Computational Pathology</h3>
-              <p>
-                AI-driven analysis of histopathology and whole-slide images, including
-                tissue and tumor characterization, architectural pattern recognition,
-                quantitative biomarkers, and clinical outcome prediction.
-              </p>
-            </article>
-
-            <article class="expertise-card">
-              <h3>Machine Learning & Deep Learning</h3>
-              <p>
-                Design and development of machine learning and deep learning models for
-                biomedical applications, including representation learning, few-shot
-                learning, weak supervision, and generalization under limited annotations.
-              </p>
-            </article>
-
-            <article class="expertise-card">
-              <h3>Optimization-Driven Deep Learning</h3>
-              <p>
-                Integration of mathematical optimization and deep learning through
-                algorithm unrolling, learned iterative schemes, and model-based
-                architectures for interpretable and robust image processing.
-              </p>
-            </article>
-
-            <article class="expertise-card">
-              <h3>Biomedical AI & Clinical Applications</h3>
-              <p>
-                Development of reliable AI methods for biomedical imaging, bridging
-                mathematical modeling, computational imaging, and clinical challenges
-                in diagnosis, prognosis, and quantitative pathology.
-              </p>
-            </article>
+          <div class="tech-group-title">MLOps, deployment & infrastructure</div>
+          <div class="tech-grid">
+            <div class="tech-card"><img src="https://cdn.simpleicons.org/docker/2496ed" alt="Docker logo" loading="lazy" onerror="swapIcon(this,'fa-brands fa-docker')"><span>Docker</span></div>
+            <div class="tech-card"><img src="https://cdn.simpleicons.org/mlflow/0194e2" alt="MLflow logo" loading="lazy" onerror="swapIcon(this,'fa-solid fa-flask-vial')"><span>MLflow</span></div>
+            <div class="tech-card"><img src="https://cdn.simpleicons.org/streamlit/ff4b4b" alt="Streamlit logo" loading="lazy" onerror="swapIcon(this,'fa-solid fa-display')"><span>Streamlit</span></div>
+            <div class="tech-card"><img src="https://cdn.simpleicons.org/githubactions/2088ff" alt="CI/CD logo" loading="lazy" onerror="swapIcon(this,'fa-solid fa-rotate')"><span>CI/CD</span></div>
+            <div class="tech-card"><img src="https://cdn.simpleicons.org/git/f05032" alt="Git logo" loading="lazy" onerror="swapIcon(this,'fa-brands fa-git-alt')"><span>Git</span></div>
+            <div class="tech-card"><img src="https://cdn.simpleicons.org/linux/fcc624" alt="Linux logo" loading="lazy" onerror="swapIcon(this,'fa-brands fa-linux')"><span>Linux</span></div>
+            <div class="tech-card"><i class="fa-solid fa-diagram-project" aria-hidden="true"></i><span>ETL / ELT</span></div>
+            <div class="tech-card"><i class="fa-solid fa-x-ray" aria-hidden="true"></i><span>PACS / DICOM</span></div>
           </div>
-        </section>
+        </div>
+      </section>
 
+      <!-- ================= RESEARCH ================= -->
+      <section id="research" class="content-section">
+        <div class="section-header reveal">
+          <div class="kicker">Research</div>
+          <h2>Research areas & expertise</h2>
+        </div>
+
+        <div class="expertise-grid">
+          <article class="expertise-card reveal">
+            <div class="icon-badge"><i class="fa-solid fa-eye"></i></div>
+            <h3>Computer Vision</h3>
+            <p>Segmentation, classification and quality control on CT, MRI, X-ray and gigapixel whole-slide images, with robust representation learning.</p>
+          </article>
+          <article class="expertise-card reveal">
+            <div class="icon-badge"><i class="fa-solid fa-bullseye"></i></div>
+            <h3>Mathematical Optimization</h3>
+            <p>Convex optimization, proximal algorithms, variational methods and inverse problems as foundations for imaging and learning.</p>
+          </article>
+          <article class="expertise-card reveal">
+            <div class="icon-badge"><i class="fa-solid fa-brain"></i></div>
+            <h3>Deep Learning</h3>
+            <p>Representation learning, weak supervision and generalization under limited annotations for biomedical applications.</p>
+          </article>
+          <article class="expertise-card reveal">
+            <div class="icon-badge"><i class="fa-solid fa-clone"></i></div>
+            <h3>Few-Shot & Transductive Learning</h3>
+            <p>Frameworks such as UNEM (CVPR 2025) that deliver strong accuracy when labels are scarce.</p>
+          </article>
+          <article class="expertise-card reveal">
+            <div class="icon-badge"><i class="fa-solid fa-diagram-next"></i></div>
+            <h3>Algorithm Unrolling</h3>
+            <p>Learned iterative schemes and model-based architectures that remain interpretable, e.g. unrolled projected gradient for stain separation.</p>
+          </article>
+          <article class="expertise-card reveal">
+            <div class="icon-badge"><i class="fa-solid fa-microscope"></i></div>
+            <h3>Computational Pathology</h3>
+            <p>Tumor architecture characterization, quantitative biomarkers, stain normalization and recurrence prediction in hepatocellular carcinoma.</p>
+          </article>
+          <article class="expertise-card reveal">
+            <div class="icon-badge"><i class="fa-solid fa-shield-halved"></i></div>
+            <h3>Trustworthy AI</h3>
+            <p>Calibration, uncertainty estimation, out-of-distribution generalization and interpretability for high-stakes clinical deployment.</p>
+          </article>
+          <article class="expertise-card reveal">
+            <div class="icon-badge"><i class="fa-solid fa-gears"></i></div>
+            <h3>MLOps</h3>
+            <p>Benchmarking, drift detection, containerized deployment and reproducible pipelines across multi-site hospital data.</p>
+          </article>
+          <article class="expertise-card reveal">
+            <div class="icon-badge"><i class="fa-solid fa-database"></i></div>
+            <h3>Data Engineering</h3>
+            <p>ETL pipelines for terabyte-scale imaging data and PACS/DICOM integration for multi-centric clinical studies.</p>
+          </article>
+        </div>
+      </section>
+
+      <!-- ================= PHD ================= -->
       <section id="phd" class="content-section">
-        <div class="section-header">
+        <div class="section-header reveal">
           <div class="kicker">Doctoral work</div>
           <h2>PhD thesis</h2>
         </div>
 
-        <div class="section-card">
-          <p class="lead">
-            I completed my PhD, <a href="https://theses.fr/2026UPAST010" target="_blank" rel="noreferrer"><strong>AI-Driven Methods in Histopathology for the Diagnosis and Prognosis of Hepatocellular Carcinoma</strong></a>,
-            at CentraleSupélec, Université Paris-Saclay, in collaboration with the Center for Visual Computing Laboratory and Kremlin-Bicêtre Hospital.
-            My work was supervised by <a href="https://jc.pesquet.eu/" target="_blank" rel="noreferrer">Prof. Jean-Christophe Pesquet</a> and
-            <a href="https://scholar.google.com/citations?user=jpdSCMMAAAAJ&hl=fr" target="_blank" rel="noreferrer">Prof. Catherine Guettier</a>, with additional supervision from
+        <div class="section-card reveal">
+          <p class="lead phd-links">
+            <a href="https://theses.fr/2026UPAST010" target="_blank" rel="noreferrer"><strong>AI-Driven Methods in Histopathology for the Diagnosis and Prognosis of Hepatocellular Carcinoma</strong></a>
+            — CentraleSupélec, Université Paris-Saclay, in collaboration with the Center for Visual Computing and Kremlin-Bicêtre Hospital.
+            Supervised by <a href="https://jc.pesquet.eu/" target="_blank" rel="noreferrer">Prof. Jean-Christophe Pesquet</a> and
+            <a href="https://scholar.google.com/citations?user=jpdSCMMAAAAJ&hl=fr" target="_blank" rel="noreferrer">Prof. Catherine Guettier</a>, with
             <a href="https://sites.google.com/view/mounir-kaaniche/home" target="_blank" rel="noreferrer">Prof. Mounir Kaaniche</a> and
             <a href="https://dblp.org/pid/65/4665.html" target="_blank" rel="noreferrer">Prof. Amel Benazza-Benyahia</a>.
           </p>
-          <div class="timeline">
+          <div class="timeline" style="margin-top:1.6rem">
             <div class="timeline-item">
               <div class="meta">Diagnostic modeling</div>
-              <h3>Automated detection and classification of tumor architectures</h3>
-              <p>Developed multi-scale, few-shot, and transductive deep learning frameworks to improve performance in histopathology under limited labels.</p>
+              <h3>Detection and classification of tumor architectures</h3>
+              <p class="lead">Multi-scale, few-shot and transductive deep learning to perform under limited labels.</p>
             </div>
             <div class="timeline-item">
               <div class="meta">Prognostic prediction</div>
               <h3>Recurrence risk modeling from WSI-derived features</h3>
-              <p>Integrated AI-derived pathology phenotypes with clinical variables to support interpretable risk stratification.</p>
+              <p class="lead">AI-derived pathology phenotypes combined with clinical variables for interpretable risk stratification.</p>
             </div>
             <div class="timeline-item">
               <div class="meta">Image processing</div>
               <h3>Stain separation and normalization</h3>
-              <p>Explored convex optimization and algorithm unrolling to improve stain consistency and feature stability in histopathological images.</p>
+              <p class="lead">Convex optimization and algorithm unrolling for consistent stains and stable features.</p>
             </div>
           </div>
         </div>
       </section>
 
-      <section id="news" class="content-section">
-        <div class="section-header">
-          <div class="kicker">Timeline</div>
-          <h2>Recent milestones</h2>
+      <!-- ================= PUBLICATIONS ================= -->
+      <section id="publications" class="content-section">
+        <div class="section-header reveal">
+          <div class="kicker">Selected work</div>
+          <h2>Publications</h2>
         </div>
 
-        <div class="section-card">
-          <div class="timeline">
-            <div class="timeline-item">
-              <div class="meta">February 2026</div>
-              <h3>Data Scientist at DEEMEA</h3>
-              <p>Working on AI-driven medical data structuring and clinical AI systems for healthcare research and translational studies.</p>
-            </div>
-            <div class="timeline-item">
-              <div class="meta">January 2026</div>
-              <h3>PhD defense</h3>
-              <p>Defended doctoral work on AI for computational pathology and hepatocellular carcinoma diagnosis/prognosis.</p>
-            </div>
-          </div>
+        <article class="publication-card featured reveal">
+          <span class="venue">PhD Thesis · 2026</span>
+          <h3>
+            <a href="https://theses.fr/2026UPAST010" target="_blank" rel="noopener noreferrer">
+              AI-Driven Methods in Histopathology for the Diagnosis and Prognosis of Hepatocellular Carcinoma
+              <i class="fa-solid fa-graduation-cap publication-link-icon"></i>
+            </a>
+          </h3>
+        </article>
+
+        <div class="publication-grid">
+          <article class="publication-card reveal">
+            <span class="venue top">IEEE ISBI 2026</span>
+            <h3>
+              <a href="https://hal.science/hal-05511612/document" target="_blank" rel="noopener noreferrer">
+                A Proximal Approach for Stain Separation and Normalization of Whole-Slide Histopathological Images
+                <i class="fa-solid fa-arrow-up-right-from-square publication-link-icon"></i>
+              </a>
+            </h3>
+          </article>
+
+          <article class="publication-card reveal">
+            <span class="venue top">CVPR 2025</span>
+            <h3>
+              <a href="https://openaccess.thecvf.com/content/CVPR2025/papers/Zhou_UNEM_UNrolled_Generalized_EM_for_Transductive_Few-Shot_Learning_CVPR_2025_paper.pdf" target="_blank" rel="noopener noreferrer">
+                UNEM: UNrolled Generalized EM for Transductive Few-Shot Learning
+                <i class="fa-solid fa-arrow-up-right-from-square publication-link-icon"></i>
+              </a>
+            </h3>
+          </article>
+
+          <article class="publication-card reveal">
+            <span class="venue">The American Journal of Pathology · 2024</span>
+            <h3>
+              <a href="https://www.sciencedirect.com/science/article/pii/S0002944024002062" target="_blank" rel="noopener noreferrer">
+                Deep Learning Classification and Quantification of Pejorative and Nonpejorative Architectures in Resected Hepatocellular Carcinoma from Digital Histopathologic Images
+                <i class="fa-solid fa-arrow-up-right-from-square publication-link-icon"></i>
+              </a>
+            </h3>
+          </article>
+
+          <article class="publication-card reveal">
+            <span class="venue">IEEE ICIP 2024</span>
+            <h3>
+              <a href="https://hal.science/hal-04444439v1/file/ICIP_2024_stainDeconv.pdf" target="_blank" rel="noopener noreferrer">
+                Unrolled Projected Gradient Algorithm for Stain Separation in Digital Histopathological Images
+                <i class="fa-solid fa-arrow-up-right-from-square publication-link-icon"></i>
+              </a>
+            </h3>
+          </article>
+
+          <article class="publication-card reveal">
+            <span class="venue">IEEE ISBI 2024</span>
+            <h3>
+              <a href="https://arxiv.org/pdf/2311.17740" target="_blank" rel="noopener noreferrer">
+                A Transductive Few-Shot Learning Approach for Classification of Digital Histopathological Slides from Liver Cancer
+                <i class="fa-solid fa-arrow-up-right-from-square publication-link-icon"></i>
+              </a>
+            </h3>
+          </article>
         </div>
       </section>
 
-<section id="publications" class="content-section">
-  <div class="section-header">
-    <div class="kicker">Selected work</div>
-    <h2>Publications</h2>
-  </div>
-
-      <article class="publication-card">
-      <h3>
-        <a href="https://theses.fr/2026UPAST010"
-           target="_blank"
-           rel="noopener noreferrer">
-          AI-Driven Methods in Histopathology for the Diagnosis and Prognosis of Hepatocellular Carcinoma
-                    <i class="fa-solid fa-graduation-cap publication-link-icon"></i>
-        </a>
-      </h3>
-      <p>Thesis contribution</p>
-    </article>
-
-  <div class="publication-grid">
-
-    <article class="publication-card">
-      <h3>
-        <a href="https://hal.science/hal-05511612/document"
-           target="_blank"
-           rel="noopener noreferrer">
-          A Proximal Approach for Stain Separation and Normalization of Whole-Slide Histopathological Images
-          <i class="fa-solid fa-arrow-up-right-from-square publication-link-icon"></i>
-        </a>
-      </h3>
-      <p>IEEE ISBI 2026</p>
-    </article>
-
-    <article class="publication-card">
-      <h3>
-        <a href="https://openaccess.thecvf.com/content/CVPR2025/papers/Zhou_UNEM_UNrolled_Generalized_EM_for_Transductive_Few-Shot_Learning_CVPR_2025_paper.pdf"
-           target="_blank"
-           rel="noopener noreferrer">
-          UNEM: UNrolled Generalized EM for transductive few-shot learning
-                    <i class="fa-solid fa-arrow-up-right-from-square publication-link-icon"></i>
-        </a>
-      </h3>
-      <p>CVPR 2025</p>
-    </article>
-
-    <article class="publication-card">
-      <h3>
-        <a href="https://www.sciencedirect.com/science/article/pii/S0002944024002062"
-           target="_blank"
-           rel="noopener noreferrer">
-          Deep Learning Classification and Quantification of Pejorative and Nonpejorative Architectures in Resected Hepatocellular Carcinoma from Digital Histopathologic Images
-          <i class="fa-solid fa-arrow-up-right-from-square publication-link-icon"></i>
-        </a>
-      </h3>
-      <p>The American Journal of Pathology</p>
-    </article>
-
-    <article class="publication-card">
-      <h3>
-        <a href="https://arxiv.org/pdf/2311.17740"
-           target="_blank"
-           rel="noopener noreferrer">
-          A transductive few-shot learning approach for classification of digital histopathological slides from liver cancer
-                    <i class="fa-solid fa-arrow-up-right-from-square publication-link-icon"></i>
-        </a>
-      </h3>
-      <p>IEEE ISBI 2024</p>
-    </article>
-
-    <article class="publication-card">
-      <h3>
-        <a href="https://hal.science/hal-04444439v1/file/ICIP_2024_stainDeconv.pdf"
-           target="_blank"
-           rel="noopener noreferrer">
-          Unrolled projected gradient algorithm for stain separation in digital histopathological images
-                    <i class="fa-solid fa-arrow-up-right-from-square publication-link-icon"></i>
-        </a>
-      </h3>
-      <p>IEEE ICIP 2024</p>
-    </article>
-
-  </div>
-</section>
-
+      <!-- ================= ACHIEVEMENTS ================= -->
       <section id="awards" class="content-section">
-        <div class="section-header">
+        <div class="section-header reveal">
           <div class="kicker">Recognition</div>
           <h2>Achievements</h2>
         </div>
 
-        <div class="section-card">
-          <div class="award-highlight">
+        <div class="award-grid">
+          <div class="section-card award-card reveal">
             <div class="award-badge">🥇</div>
-            <div>
-              <p>
-                <strong>1st place</strong> out of 256 teams in the <strong><a href="https://www.linkedin.com/feed/update/urn:li:activity:7241338279902560256/" target="_blank" class="text-blue-600 hover:underline">DigiLut Data Challenge</a> for Lung Transplant Rejection</strong>, 
-                organized by Hôpital Foch and Bpifrance. This work was carried out in collaboration with CentraleSupélec,
-                Université Paris-Saclay, Inria, and OPIS.
-              </p>
-            </div>
+            <p>
+              <strong>1st place out of 256 teams</strong> in the
+              <a href="https://www.linkedin.com/feed/update/urn:li:activity:7241338279902560256/" target="_blank" rel="noopener">DigiLut Data Challenge</a>
+              for Lung Transplant Rejection (2024), organized by Hôpital Foch and Health Data Hub / Bpifrance. Carried out with CentraleSupélec, Université Paris-Saclay, Inria and OPIS.
+            </p>
+          </div>
+          <div class="section-card award-card reveal">
+            <div class="award-badge">🎓</div>
+            <p>
+              <strong>National rank 63 / 1,773 (top 3%)</strong> in the Tunisian national engineering entrance exam (2018).
+            </p>
           </div>
         </div>
       </section>
 
+      <!-- ================= CONTACT ================= -->
       <section id="contact" class="content-section">
-        <div class="section-header">
+        <div class="section-header reveal">
           <div class="kicker">Contact</div>
-          <h2>Get in touch</h2>
+          <h2>Let's work together</h2>
         </div>
 
         <div class="contact-grid">
-          <div class="section-card">
-            <p class="lead">I welcome opportunities in research collaboration, applied AI, and interdisciplinary work at the interface of healthcare, imaging, and data science.</p>
+          <div class="section-card reveal">
+            <p class="lead">I'm looking for roles where I can architect end-to-end data pipelines and deploy scalable, impact-driven AI/ML solutions. I welcome research collaboration at the interface of healthcare, imaging and data science.</p>
             <div class="contact-list">
-              <a href="mailto:aymensadraoui1919@gmail.com" class="contact-item">✉️ aymensadraoui1919@gmail.com</a>
+              <a href="mailto:aymensadraoui1919@gmail.com" class="contact-item"><i class="fa-solid fa-envelope"></i> aymensadraoui1919@gmail.com</a>
+              <a href="https://www.linkedin.com/in/aymen-sadraoui-abb571288/" target="_blank" rel="noreferrer" class="contact-item"><i class="fa-brands fa-linkedin-in"></i> LinkedIn</a>
+              <a href="https://github.com/aymensadraoui" target="_blank" rel="noreferrer" class="contact-item"><i class="fa-brands fa-github"></i> GitHub</a>
+              <a href="https://scholar.google.com/citations?user=OHURXa0AAAAJ&hl=en" target="_blank" rel="noreferrer" class="contact-item"><i class="fa-solid fa-graduation-cap"></i> Google Scholar</a>
             </div>
           </div>
 
-          <div class="contact-card">
-            <strong>Research profile</strong>
-            <div class="skill-list" style="margin-top: 1rem;">
-              <span class="skill-pill">Clinical AI</span>
+          <div class="section-card reveal">
+            <strong>Profile</strong>
+            <div class="skill-list">
               <span class="skill-pill">Data Science</span>
-              <span class="skill-pill">Computational Pathology</span>
+              <span class="skill-pill">ML Engineering</span>
               <span class="skill-pill">Medical Imaging</span>
+              <span class="skill-pill">Computational Pathology</span>
+              <span class="skill-pill">MLOps</span>
+              <span class="skill-pill">Clinical AI</span>
             </div>
+            <a class="btn btn-primary" style="margin-top:1.6rem" href="CV_AS.pdf" target="_blank" rel="noopener"><i class="fa-solid fa-file-pdf"></i> Download my CV</a>
           </div>
         </div>
       </section>
     </main>
 
-    <footer class="footer">© 2026 Aymen Sadraoui</footer>
+    <footer class="footer">© 2026 Aymen Sadraoui · Paris, France</footer>
   </div>
 
   <script>
-    const sections = document.querySelectorAll("section[id]");
-    const navLinks = document.querySelectorAll(".nav-links a");
+    // Fallback to a Font Awesome icon if a logo fails to load
+    function swapIcon(img, cls) {
+      var i = document.createElement('i');
+      i.className = cls;
+      i.setAttribute('aria-hidden', 'true');
+      img.replaceWith(i);
+    }
 
-    window.addEventListener("scroll", () => {
-      let current = "";
-      sections.forEach((section) => {
-        const sectionTop = section.offsetTop - 120;
-        if (window.scrollY >= sectionTop) {
-          current = section.getAttribute("id");
-        }
-      });
+    // Typed role text
+    (function () {
+      var phrases = [
+        'Data Scientist & Machine Learning Engineer',
+        'Medical imaging & computer vision',
+        'Deep learning × mathematical optimization',
+        'From research to production MLOps'
+      ];
+      var el = document.getElementById('typed');
+      var p = 0, c = 0, del = false;
+      if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) { el.textContent = phrases[0]; return; }
+      function tick() {
+        var s = phrases[p];
+        el.textContent = s.slice(0, c);
+        if (!del && c < s.length) { c++; setTimeout(tick, 55); }
+        else if (!del) { del = true; setTimeout(tick, 1700); }
+        else if (c > 0) { c--; setTimeout(tick, 28); }
+        else { del = false; p = (p + 1) % phrases.length; setTimeout(tick, 350); }
+      }
+      tick();
+    })();
 
-      navLinks.forEach((link) => {
-        link.classList.toggle("active", link.getAttribute("href") === `#${current}`);
-      });
-    });
+    // Scroll reveal + counters
+    (function () {
+      var io = new IntersectionObserver(function (entries) {
+        entries.forEach(function (e) {
+          if (!e.isIntersecting) return;
+          e.target.classList.add('visible');
+          e.target.querySelectorAll('[data-count]').forEach(function (n) {
+            var target = +n.dataset.count, v = 0;
+            var step = setInterval(function () {
+              v++; n.textContent = v;
+              if (v >= target) clearInterval(step);
+            }, 140);
+          });
+          io.unobserve(e.target);
+        });
+      }, { threshold: 0.15 });
+      document.querySelectorAll('.reveal').forEach(function (el) { io.observe(el); });
+    })();
+
+    // Active nav link
+    (function () {
+      var sections = document.querySelectorAll('section[id]');
+      var links = document.querySelectorAll('.nav-links a');
+      window.addEventListener('scroll', function () {
+        var current = '';
+        sections.forEach(function (s) { if (window.scrollY >= s.offsetTop - 140) current = s.id; });
+        links.forEach(function (l) { l.classList.toggle('active', l.getAttribute('href') === '#' + current); });
+      }, { passive: true });
+    })();
+
+    // Neural-network canvas in the hero
+    (function () {
+      var cv = document.getElementById('network');
+      if (!cv || window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+      var ctx = cv.getContext('2d'), w, h, pts = [];
+      function resize() {
+        w = cv.width = cv.offsetWidth; h = cv.height = cv.offsetHeight;
+        var n = Math.min(70, Math.floor(w * h / 18000));
+        pts = Array.from({ length: n }, function () {
+          return { x: Math.random() * w, y: Math.random() * h, vx: (Math.random() - .5) * .35, vy: (Math.random() - .5) * .35 };
+        });
+      }
+      function draw() {
+        ctx.clearRect(0, 0, w, h);
+        pts.forEach(function (a, i) {
+          a.x += a.vx; a.y += a.vy;
+          if (a.x < 0 || a.x > w) a.vx *= -1;
+          if (a.y < 0 || a.y > h) a.vy *= -1;
+          ctx.fillStyle = 'rgba(56,189,248,.8)';
+          ctx.beginPath(); ctx.arc(a.x, a.y, 1.8, 0, 6.283); ctx.fill();
+          for (var j = i + 1; j < pts.length; j++) {
+            var b = pts[j], d = Math.hypot(a.x - b.x, a.y - b.y);
+            if (d < 130) {
+              ctx.strokeStyle = 'rgba(139,92,246,' + (1 - d / 130) * .45 + ')';
+              ctx.beginPath(); ctx.moveTo(a.x, a.y); ctx.lineTo(b.x, b.y); ctx.stroke();
+            }
+          }
+        });
+        requestAnimationFrame(draw);
+      }
+      resize(); draw();
+      window.addEventListener('resize', resize);
+    })();
   </script>
 </body>
 </html>
